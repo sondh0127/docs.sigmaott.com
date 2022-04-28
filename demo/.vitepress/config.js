@@ -19,8 +19,8 @@ module.exports = (async () => {
     },
 
     lang: 'en-US',
-    title: 'Vue.js',
-    description: 'Vue.js - The Progressive JavaScript Framework',
+    title: 'Sigma Interactive Livestream',
+    description: 'Sigma Interactive Livestream',
     head: [
       // ['link', { rel: 'stylesheet', href: 'https://unpkg.com/@stoplight/elements/styles.min.css' }],
       ['script', { src: 'https://unpkg.com/@stoplight/elements/web-components.min.js' }]
