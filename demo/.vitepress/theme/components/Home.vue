@@ -6,9 +6,9 @@ const { frontmatter } = useData()
 
 <template>
   <section id="hero" class="flex flex-col items-center">
-    <img class="logo" src="/logo.svg" height="220" alt="Vite Ruby Logo by Maximo Mussini" />
+    <img class="logo" src="/img/logo.png" height="220" alt="Sigma Logo by Maximo Mussini" />
     <h1 class="tagline font-semibold">
-      Vite Ruby
+      Sigma Vitepress Docs
     </h1>
     <p class="description text-lg md:text-2xl">
       Bringing joy to your frontend experience.

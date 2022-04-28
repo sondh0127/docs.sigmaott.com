@@ -117,12 +117,44 @@ html:not(.dark) .vt-doc [class*='language-'] code {
 
 
 :root {
-  --color-canvas-100: var(--docs-color-background-100);
-  --color-canvas-200: var(--docs-color-background-200);
-  --color-canvas-300: var(--docs-color-background-300);
+   /* Tailwind theming */
+
+  --docs-color-primary: #2160fd;
+  --docs-color-primary-100: #2160fd;
+
+  --docs-color-text: #000000;
+  --docs-color-text-100: #646464;
+
+  --docs-color-border: #dadde1;
+
+  --docs-color-background: #ffffff;
+  --docs-color-background-100: #f8f8f8;
+  --docs-color-background-200: #efefef;
+  --docs-color-background-300: #dcdcdc;
+
+    /* Elements theming */
+
+    --color-canvas-100: var(--docs-color-background-100);
+    --color-canvas-200: var(--docs-color-background-200);
+    --color-canvas-300: var(--docs-color-background-300);
+
+    --docsearch-key-shadow: none !important;
+    --docsearch-key-gradient: #dcdcdc !important;
 }
 
 html[data-theme='dark'] {
+  --docs-color-primary-100: #1a90ff;
+
+  --docs-color-text: #ffffff;
+  --docs-color-text-100: #b4b4b4;
+
+  --docs-color-border: #2e2e2e;
+
+  --docs-color-background: #161616;
+  --docs-color-background-100: #1c1c1c;
+  --docs-color-background-200: #2a2a2a;
+  --docs-color-background-300: #464646;
+
   --color-canvas-100: var(--docs-color-background-100);
   --color-canvas-200: var(--docs-color-background-200);
   --color-canvas-300: var(--docs-color-background-300);
@@ -158,10 +190,6 @@ html[data-theme='dark'] {
 
 .HttpOperation .sl-flex .sl-w-2\/5 {
   @apply ml-8 border-l border-border pl-8;
-}
-
-.vt-doc div[class*='language-'] {
-  all: unset;
 }
 
 /* Fixes API reference white border */

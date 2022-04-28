@@ -29,7 +29,7 @@
 .vt-doc div[class*='language-'] {
   position: relative;
   margin: 28px -24px;
-  background-color: #292d3e;
+  /* background-color: #292d3e; */
   overflow-x: auto;
   transition: background-color 0.5s;
 }

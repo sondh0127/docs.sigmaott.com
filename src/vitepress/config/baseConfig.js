@@ -42,6 +42,25 @@ module.exports = async () => ({
         transformers: [
           transformerDirective(),
         ],
+        theme: {
+          colors: {
+            primary: {
+              DEFAULT: 'var(--docs-color-primary)',
+              100: 'var(--docs-color-primary-100)',
+            },
+            text: {
+              DEFAULT: 'var(--docs-color-text)',
+              100: 'var(--docs-color-text-100)',
+            },
+            border: 'var(--docs-color-border)',
+            background: {
+              DEFAULT: 'var(--docs-color-background)',
+              100: 'var(--docs-color-background-100)',
+              200: 'var(--docs-color-background-200)',
+              300: 'var(--docs-color-background-300)',
+            },
+          },
+        }
       }),
     ]
   },
