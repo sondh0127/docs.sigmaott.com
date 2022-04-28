@@ -21,6 +21,10 @@ module.exports = (async () => {
     lang: 'en-US',
     title: 'Vue.js',
     description: 'Vue.js - The Progressive JavaScript Framework',
+    head: [
+      ['link', { rel: 'stylesheet', href: 'https://unpkg.com/@stoplight/elements/styles.min.css' }],
+      ['script', { src: 'https://unpkg.com/@stoplight/elements/web-components.min.js' }]
+    ],
 
     themeConfig: {
       logo: '/img/logo-vue.svg',

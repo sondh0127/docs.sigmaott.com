@@ -83,6 +83,7 @@ function load() {
   display: flex;
   align-items: center;
   padding-left: 16px;
+  justify-content: end;
 }
 
 @media (min-width: 768px) {
@@ -133,7 +134,7 @@ function load() {
 
 .DocSearch-Button {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
   width: 48px;

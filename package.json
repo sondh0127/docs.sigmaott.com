@@ -1,7 +1,7 @@
 {
-  "name": "@vue/theme",
-  "version": "1.0.1",
-  "description": "The design system for Vue.js.",
+  "name": "@sigma-livestream/theme",
+  "version": "1.0.0",
+  "description": "The document theme for Sigma Livestream",
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts",
@@ -18,9 +18,10 @@
   },
   "keywords": [
     "vue",
-    "design-system"
+    "sigma-livestream",
+    "sigma-interactive"
   ],
-  "author": "Evan You",
+  "author": "Son Hong Do",
   "license": "MIT",
   "homepage": "https://theme.vuejs.org",
   "bugs": {

@@ -69,7 +69,7 @@ const handleClick = ({ target: el }: Event) => {
   font-weight: 700;
   margin-bottom: 4px;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.4px;
 }
 
@@ -96,7 +96,7 @@ const handleClick = ({ target: el }: Event) => {
 .outline-marker {
   opacity: 0;
   position: absolute;
-  background-color: var(--vt-c-green);
+  background-color: var(--vt-c-brand);
   border-radius: 4px;
   width: 4px;
   height: 20px;
