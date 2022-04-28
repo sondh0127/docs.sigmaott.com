@@ -7,6 +7,22 @@
 
 // for local-linked development
 const deps = ['@vue/theme', '@vueuse/core', 'body-scroll-lock']
+const Unocss = require('unocss/vite').default
+const presetIcons = require('@unocss/preset-icons').default
+const { presetAttributify, presetUno } = require('unocss')
+const transformerDirective = require('@unocss/transformer-directives').default
+
+
+
+const colors = ['red', 'green', 'blue', 'gray', 'yellow', 'dark']
+const safelist = []
+
+// colors.forEach((color) => {
+//   safelist.push(`bg-${color}-500`)
+//   safelist.push(`hover:bg-${color}-400`)
+//   safelist.push(`border-${color}-600`)
+//   safelist.push(`hover:border-${color}-500`)
+// })
 
 /**
  * @type {() => Promise<import('vitepress').UserConfig>}
@@ -18,7 +34,16 @@ module.exports = async () => ({
     },
     optimizeDeps: {
       exclude: deps
-    }
+    },
+    plugins: [
+      Unocss({
+        presets: [presetAttributify(), presetUno(), presetIcons()],
+        safelist,
+        transformers: [
+          transformerDirective(),
+        ],
+      }),
+    ]
   },
 
   head: [

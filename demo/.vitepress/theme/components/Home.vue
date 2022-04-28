@@ -30,8 +30,6 @@ const { frontmatter } = useData()
       <p v-html="feature.details" />
     </a>
   </section>
-  <elements-api apiDescriptionUrl="https://api.apis.guru/v2/specs/github.com/1.1.4/openapi.yaml" router="hash"
-    layout="sidebar" />
 </template>
 
 <style scoped>

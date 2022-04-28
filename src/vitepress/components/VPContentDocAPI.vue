@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { useData } from 'vitepress'
-import VPContentDocOutline from './VPContentDocOutline.vue'
-import VPContentDocFooter from './VPContentDocFooter.vue'
 import type { Config } from '../config'
 import { VTLink, VTIconEdit } from '../../core'
 
@@ -25,23 +23,13 @@ const pageClass = computed(() => {
 
 <template>
   <div
-    class="VPContentDoc"
+    class="VPContentDocAPI"
     :class="{ 'has-aside': frontmatter.aside !== false }"
   >
-    <div class="container">
-      <div class="aside" v-if="frontmatter.aside !== false">
-        <div class="aside-container">
-          <slot name="aside-top" />
-          <VPContentDocOutline
-            v-if="page.headers && frontmatter.outline !== false"
-          />
-          <slot name="aside-mid" />
-          <slot name="aside-bottom" />
-        </div>
-      </div>
+    <div class="container mx-auto">
       <div class="content">
         <slot name="content-top" />
-        <main>
+        <main class="content-main">
           <Content class="vt-doc" :class="pageClass" />
           <p
             class="edit-link"
@@ -51,8 +39,8 @@ const pageClass = computed(() => {
             <VTLink :href="repoUrl" :no-icon="true">{{ theme.editLink.text }}</VTLink>
           </p>
         </main>
-        <slot name="content-bottom" />
-        <VPContentDocFooter v-if="frontmatter.footer !== false" />
+        <!-- <slot name="content-bottom" /> -->
+        <!-- <VPContentDocFooter v-if="frontmatter.footer !== false" /> -->
       </div>
     </div>
   </div>
@@ -69,8 +57,15 @@ const pageClass = computed(() => {
 
 .content {
   margin: 0 auto;
-  /* max-width: 688px; */
+  width: 100%;
+  height: calc(100vh - 55px);
   position: relative;
+}
+
+.content-main {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 .aside {
