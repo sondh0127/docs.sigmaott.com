@@ -284,6 +284,10 @@ module.exports = (async () => {
             ]
           }
         ],
+        // '/sigma-interactive': [
+        //   {
+        //   }
+        // ]
       }
     }
   }

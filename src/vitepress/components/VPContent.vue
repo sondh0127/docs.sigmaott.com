@@ -23,13 +23,13 @@ const { hasSidebar } = useSidebar()
       <template #footer-before><slot name="footer-before" /></template>
       <template #footer-after><slot name="footer-after" /></template>
     </VPContentPage>
-    <VPContentDocAPI v-else :class="{ 'has-sidebar': hasSidebar }">
+    <VPContentDoc v-else :class="{ 'has-sidebar': hasSidebar }">
       <template #content-top><slot name="content-top" /></template>
       <template #content-bottom><slot name="content-bottom" /></template>
       <template #aside-top><slot name="aside-top" /></template>
       <template #aside-mid><slot name="aside-mid" /></template>
       <template #aside-bottom><slot name="aside-bottom" /></template>\
-    </VPContentDocAPI>
+    </VPContentDoc>
   </div>
 </template>
 

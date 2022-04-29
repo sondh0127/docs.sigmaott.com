@@ -32,9 +32,9 @@
     "lint:fail": "prettier --check --parser typescript \"{__tests__,docs,src,types}/**/*.ts\"",
     "type": "tsc --noEmit",
     "test": "npm run lint && npm run type",
-    "dev": "vitepress dev demo",
-    "demo-build": "vitepress build demo",
-    "serve": "npm run demo-build && vitepress serve demo"
+    "dev": "vitepress dev docs",
+    "demo-build": "vitepress build docs",
+    "serve": "npm run demo-build && vitepress serve docs"
   },
   "dependencies": {
     "@docsearch/css": "^3.0.0-alpha.41",
