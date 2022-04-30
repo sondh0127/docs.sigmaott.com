@@ -24,17 +24,12 @@ const pageClass = computed(() => {
 </script>
 
 <template>
-  <div
-    class="VPContentDoc"
-    :class="{ 'has-aside': frontmatter.aside !== false }"
-  >
+  <div class="VPContentDoc" :class="{ 'has-aside': frontmatter.aside !== false }">
     <div class="container">
       <div class="aside" v-if="frontmatter.aside !== false">
         <div class="aside-container">
           <slot name="aside-top" />
-          <VPContentDocOutline
-            v-if="page.headers && frontmatter.outline !== false"
-          />
+          <VPContentDocOutline v-if="page.headers && frontmatter.outline !== false" />
           <slot name="aside-mid" />
           <slot name="aside-bottom" />
         </div>
@@ -43,10 +38,7 @@ const pageClass = computed(() => {
         <slot name="content-top" />
         <main>
           <Content class="vt-doc" :class="pageClass" />
-          <p
-            class="edit-link"
-            v-if="theme.editLink && frontmatter.editLink !== false"
-          >
+          <p class="edit-link" v-if="theme.editLink && frontmatter.editLink !== false">
             <VTIconEdit class="vt-icon" />
             <VTLink :href="repoUrl" :no-icon="true">{{ theme.editLink.text }}</VTLink>
           </p>
@@ -129,23 +121,29 @@ const pageClass = computed(() => {
   .VPContentDoc {
     padding: 64px 0 96px 64px;
   }
+
   .VPContentDoc:not(.has-sidebar.has-aside) {
     padding-left: calc((100vw - 688px) / 2);
   }
+
   .VPContentDoc.has-aside:not(.has-sidebar) {
     padding-left: calc((100vw - 688px - 320px) / 2);
   }
+
   .container {
     display: flex;
   }
+
   .content {
     min-width: 620px;
     margin: 0;
     order: 1;
   }
+
   .VPContentDoc:not(.has-aside) .content {
     min-width: 688px;
   }
+
   .aside {
     display: block;
     order: 2;
@@ -156,6 +154,7 @@ const pageClass = computed(() => {
   .VPContentDoc {
     padding: 64px 0 96px 96px;
   }
+
   .aside {
     padding-left: 96px;
   }

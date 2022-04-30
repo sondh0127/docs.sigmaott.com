@@ -1,5 +1,6 @@
 const getBase = require('../../src/vitepress/config/baseConfig')
 const path = require('path')
+const AutoImport = require('unplugin-auto-import/vite')
 
 module.exports = (async () => {
   const base = await getBase()
@@ -15,7 +16,17 @@ module.exports = (async () => {
         alias: {
           '@vue/theme': path.join(__dirname, '../../src')
         }
-      }
+      },
+      plugins: [
+        ...base.vite.plugins,
+        AutoImport({
+          imports: [
+            // presets
+            'vue',
+            'vue-router',
+          ],
+        }),
+      ],
     },
 
     lang: 'en-US',

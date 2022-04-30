@@ -7,28 +7,60 @@ import VPContentDocAPI from './VPContentDocAPI.vue'
 import VPNotFound from './VPNotFound.vue'
 
 const route = useRoute()
+
 const { frontmatter } = useData()
 const { hasSidebar } = useSidebar()
+
+const isApi = computed(() => {
+  return route.path === '/api/'
+})
 
 </script>
 
 <template>
-  <div
-    id="VPContent"
-    class="VPContent"
-    :class="{ 'has-sidebar': hasSidebar }"
-  >
+  <div id="VPContent" class="VPContent" :class="{ 'has-sidebar': hasSidebar }">
     <VPNotFound v-if="route.component === VPNotFound" />
     <VPContentPage v-else-if="!!frontmatter.page">
-      <template #footer-before><slot name="footer-before" /></template>
-      <template #footer-after><slot name="footer-after" /></template>
+      <template #footer-before>
+        <slot name="footer-before" />
+      </template>
+      <template #footer-after>
+        <slot name="footer-after" />
+      </template>
     </VPContentPage>
+    <VPContentDocAPI v-else-if="isApi" :class="{ 'has-sidebar': hasSidebar }">
+      <template #content-top>
+        <slot name="content-top" />
+      </template>
+      <template #content-bottom>
+        <slot name="content-bottom" />
+      </template>
+      <template #aside-top>
+        <slot name="aside-top" />
+      </template>
+      <template #aside-mid>
+        <slot name="aside-mid" />
+      </template>
+      <template #aside-bottom>
+        <slot name="aside-bottom" />
+      </template>\
+    </VPContentDocAPI>
     <VPContentDoc v-else :class="{ 'has-sidebar': hasSidebar }">
-      <template #content-top><slot name="content-top" /></template>
-      <template #content-bottom><slot name="content-bottom" /></template>
-      <template #aside-top><slot name="aside-top" /></template>
-      <template #aside-mid><slot name="aside-mid" /></template>
-      <template #aside-bottom><slot name="aside-bottom" /></template>\
+      <template #content-top>
+        <slot name="content-top" />
+      </template>
+      <template #content-bottom>
+        <slot name="content-bottom" />
+      </template>
+      <template #aside-top>
+        <slot name="aside-top" />
+      </template>
+      <template #aside-mid>
+        <slot name="aside-mid" />
+      </template>
+      <template #aside-bottom>
+        <slot name="aside-bottom" />
+      </template>\
     </VPContentDoc>
   </div>
 </template>
@@ -44,6 +76,7 @@ const { hasSidebar } = useSidebar()
   .VPContent {
     padding-top: var(--vt-nav-height);
   }
+
   .VPContent.has-sidebar {
     padding-left: var(--vp-sidebar-width-small);
   }
@@ -51,9 +84,7 @@ const { hasSidebar } = useSidebar()
 
 @media (min-width: 1440px) {
   .VPContent.has-sidebar {
-    padding-left: calc(
-      (100vw - var(--vp-screen-max-width)) / 2 + var(--vp-sidebar-width-small)
-    );
+    padding-left: calc((100vw - var(--vp-screen-max-width)) / 2 + var(--vp-sidebar-width-small));
   }
 }
 </style>

@@ -7,15 +7,17 @@
     "esModuleInterop": true,
     "noUnusedLocals": true,
     "lib": ["ESNext", "DOM"],
-    "types": ["vite/client"],
+    "types": ["vite/client", "docs/auto-imports.d.ts"],
     "paths": {
       "@vue/theme": ["src/index.ts"]
-    }
+    },
+    "jsx": "preserve"
   },
   "include": [
     "src",
     "types",
-    "docs/.vitepress/theme"
+    "docs/.vitepress/theme",
+    "docs"
   ],
   "exclude": ["node_modules"]
 }
