@@ -12,7 +12,7 @@ const { frontmatter } = useData()
 const { hasSidebar } = useSidebar()
 
 const isApi = computed(() => {
-  return route.path === '/api/'
+  return route.path.startsWith('/api/')
 })
 
 </script>

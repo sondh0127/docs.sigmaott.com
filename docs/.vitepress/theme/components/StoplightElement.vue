@@ -4,6 +4,6 @@ defineProps<{
 }>()
 </script>
 <template>
-    <elements-api :apiDescriptionUrl="apiDescriptionUrl" router="hash"
+    <elements-api logo="/img/logo.png" :apiDescriptionUrl="apiDescriptionUrl" router="hash"
         layout="sidebar" />
 </template>

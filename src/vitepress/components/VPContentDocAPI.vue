@@ -3,6 +3,8 @@ import { computed } from 'vue'
 import { useData } from 'vitepress'
 import type { Config } from '../config'
 import { VTLink, VTIconEdit } from '../../core'
+import VPLoading from './VPLoading.vue';
+import VPContentDocFooter from './VPContentDocFooter.vue';
 
 const { page, frontmatter, theme } = useData<Config>()
 
@@ -26,8 +28,9 @@ const pageClass = computed(() => {
     class="VPContentDocAPI"
     :class="{ 'has-aside': frontmatter.aside !== false }"
   >
-    <div class="container mx-auto">
-      <div class="content">
+    <div class="container mx-auto relative h-[calc(100vh-55px)]">
+      <VPLoading/>
+      <div class="relative z-200">
         <slot name="content-top" />
         <main class="content-main">
           <Content class="vt-doc" :class="pageClass" />
@@ -39,8 +42,8 @@ const pageClass = computed(() => {
             <VTLink :href="repoUrl" :no-icon="true">{{ theme.editLink.text }}</VTLink>
           </p>
         </main>
-        <!-- <slot name="content-bottom" /> -->
-        <!-- <VPContentDocFooter v-if="frontmatter.footer !== false" /> -->
+        <slot name="content-bottom" />
+        <VPContentDocFooter v-if="frontmatter.footer !== false" />
       </div>
     </div>
   </div>
@@ -56,10 +59,6 @@ const pageClass = computed(() => {
 }
 
 .content {
-  margin: 0 auto;
-  width: 100%;
-  height: calc(100vh - 55px);
-  position: relative;
 }
 
 .content-main {

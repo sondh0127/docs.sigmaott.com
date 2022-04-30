@@ -33,7 +33,7 @@ module.exports = (async () => {
     title: 'Sigma Interactive Livestream',
     description: 'Sigma Interactive Livestream',
     head: [
-      // ['link', { rel: 'stylesheet', href: 'https://unpkg.com/@stoplight/elements/styles.min.css' }],
+      ['link', { rel: 'icon', href: '/favicon.svg' }],
       ['script', { src: 'https://unpkg.com/@stoplight/elements/web-components.min.js' }]
     ],
 

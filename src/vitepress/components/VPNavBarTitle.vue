@@ -1,7 +1,7 @@
 <template>
   <a class="VPNavBarTitle" href="/">
     <slot name="navbar-title">
-      <img src="/img/logo.png" class="w-[40px] h-[40px] mr-2"/>
+      <img src="/img/logo.png" class="w-[32px] h-[32px] mr-2"/>
       <span class="text">Sigma Livestream</span>
     </slot>
   </a>
