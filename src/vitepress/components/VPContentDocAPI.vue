@@ -30,7 +30,7 @@ const pageClass = computed(() => {
   >
     <div class="container mx-auto relative h-[calc(100vh-55px)]">
       <VPLoading/>
-      <div class="relative z-200">
+      <div class="relative z-200 w-full">
         <slot name="content-top" />
         <main class="content-main">
           <Content class="vt-doc" :class="pageClass" />

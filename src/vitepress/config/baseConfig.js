@@ -51,6 +51,7 @@ module.exports = async () => ({
             text: {
               DEFAULT: 'var(--docs-color-text)',
               100: 'var(--docs-color-text-100)',
+              'vt-1':'var(--vt-c-text-1)]',
             },
             border: 'var(--docs-color-border)',
             background: {
