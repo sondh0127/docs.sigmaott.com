@@ -63,7 +63,7 @@ app-deploy-dev:
     DEPLOY_ENVIRONMENT: develop
     DEPLOY_IMAGE_TAG: $CI_COMMIT_SHORT_SHA
     DEPLOY_IMAGE: $PRIVATE_APP_IMAGE_TAG
-    DEPLOY_PATH: sigma-frontend/
+    DEPLOY_PATH: sigma-frontend/landing-page
   trigger:
     project: sigma-livestream/k8s-infra-dev
     branch: master
