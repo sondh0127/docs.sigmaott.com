@@ -6,11 +6,19 @@ const ogTitle = 'Vite'
 const ogUrl = 'https://main.vitejs.dev'
 
 export default defineConfig({
-  title: 'Vite',
-  description: 'Next Generation Frontend Tooling',
+  title: 'Sigma Streaming Platform',
+  description: 'Modern Streaming Platform',
+
+  base: '/docs/',
 
   head: [
-    ['script', { type: "text/javascript", src: 'https://unpkg.com/@stoplight/elements/web-components.min.js' }],
+    [
+      'script',
+      {
+        type: 'text/javascript',
+        src: 'https://unpkg.com/@stoplight/elements/web-components.min.js'
+      }
+    ],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: ogTitle }],
@@ -49,29 +57,47 @@ export default defineConfig({
       }
     },
 
-    carbonAds: {
-      code: 'CEBIEK3N',
-      placement: 'vitejsdev'
-    },
+    // carbonAds: {
+    //   code: 'CEBIEK3N',
+    //   placement: 'vitejsdev'
+    // },
 
-    localeLinks: {
-      text: 'English',
-      items: [
-        { text: '简体中文', link: 'https://cn.vitejs.dev' },
-        { text: '日本語', link: 'https://ja.vitejs.dev' },
-        { text: 'Español', link: 'https://es.vitejs.dev' }
-      ]
-    },
+    // localeLinks: {
+    //   text: 'English',
+    //   items: [
+    //     { text: '简体中文', link: 'https://cn.vitejs.dev' },
+    //     { text: '日本語', link: 'https://ja.vitejs.dev' },
+    //     { text: 'Español', link: 'https://es.vitejs.dev' }
+    //   ]
+    // },
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present Evan You & Vite Contributors'
+      copyright: 'Copyright © 2018-present Thudo JSC'
     },
 
     nav: [
-      { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
+      {
+        text: 'Guide',
+        items: [{ text: 'Sigma Interactive', link: '/sigma-interactive/' }]
+      },
+      // { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
       { text: 'Config', link: '/config/', activeMatch: '/config/' },
       { text: 'Plugins', link: '/plugins/', activeMatch: '/plugins/' },
+      {
+        text: 'Apis',
+        items: [
+          { text: 'Sigma Interactive Apis', link: '/apis/sigma-interactive' },
+          {
+            text: 'Sigma Linear Right Management Apis',
+            link: '/apis/sigma-lrm'
+          },
+          {
+            text: 'Sigma Transcode Live Apis',
+            link: '/apis/sigma-transcode-live'
+          },
+          { text: 'Sigma Dynamic Ads Insert Apis', link: '/apis/sigma-dai' }
+        ]
+      },
       {
         text: 'Links',
         items: [
@@ -100,19 +126,25 @@ export default defineConfig({
             link: 'https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md'
           }
         ]
-      },
-      {
-        text: 'v3 (next)',
-        items: [
-          {
-            text: 'v2.x (stable)',
-            link: 'https://v2.vitejs.dev'
-          }
-        ]
       }
     ],
 
     sidebar: {
+      '/sigma-interactive/': [
+        {
+          text: 'Get Started',
+          items: [
+            {
+              text: 'Introduction',
+              link: '/sigma-interactive/1.get-started/1.introduction'
+            },
+            {
+              text: 'Get Started',
+              link: '/sigma-interactive/1.get-started/2.get-started'
+            }
+          ]
+        }
+      ],
       '/guide/': [
         {
           text: 'Guide',
@@ -168,6 +200,10 @@ export default defineConfig({
             {
               text: 'Migration from v2',
               link: '/guide/migration'
+            },
+            {
+              text: 'Testing',
+              link: '/guide/testing'
             }
           ]
         },

@@ -1,0 +1,72 @@
+# Reference: https://www.exclamationlabs.com/blog/continuous-deployment-to-npm-using-gitlab-ci/
+
+# GitLab uses docker in the background, so we need to specify the
+# image versions. This is useful because we're freely to use
+# multiple node versions to work with it. They come from the docker
+# repo.
+# Uses NodeJS V 9.4.0
+image: docker:stable
+
+# cache:
+#   untracked: true
+#   key: "$CI_PROJECT_ID"
+#   paths:
+#     - node_modules
+
+variables:
+  REGISTRY_GROUP: sigma-livestream
+  PRIVATE_APP_IMAGE_TAG: '$REGISTRY/$REGISTRY_GROUP/sigma-streaming-platform-docs'
+# :$CI_COMMIT_REF_SLUG
+# We tell GitLab to install all the packages
+# before running anything.
+# Docker images come with yarn preinstalled
+
+# You specify the stages. Those are the steps that GitLab will go through
+# Order matters.
+stages:
+  - build
+  - build-image
+  - docker-release
+  - deploy-dev
+  # - staging
+  # - openMr
+  # - production
+
+app-image-build:
+  stage: build-image
+  tags:
+    - dind
+  needs: []
+  script:
+    - docker build -t $PRIVATE_APP_IMAGE_TAG:$CI_COMMIT_SHORT_SHA .
+  only:
+    refs:
+      - develop
+
+
+app-image-release-private:
+  stage: docker-release
+  tags:
+    - dind
+  before_script:
+    - docker login -u $HARBOR_USERNAME -p $HARBOR_PASSWORD $REGISTRY
+  script:
+    - docker push $PRIVATE_APP_IMAGE_TAG:$CI_COMMIT_SHORT_SHA
+  only:
+    refs:
+      - develop
+
+
+app-deploy-dev:
+  stage: deploy-dev
+  variables:
+    DEPLOY_ENVIRONMENT: develop
+    DEPLOY_IMAGE_TAG: $CI_COMMIT_SHORT_SHA
+    DEPLOY_IMAGE: $PRIVATE_APP_IMAGE_TAG
+    DEPLOY_PATH: sigma-frontend/
+  trigger:
+    project: sigma-livestream/k8s-infra-dev
+    branch: master
+  only:
+    refs:
+      - develop
