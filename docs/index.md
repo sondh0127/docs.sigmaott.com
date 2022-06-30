@@ -9,7 +9,7 @@ hero:
   text: The New Modern Streaming Platform
   tagline: Our wide array of video solutions are deployed globally across thousands of enterprises, media companies, service providers, and educational institutions, leveraging video to teach, learn, communicate, collaborate, and entertain.
   image:
-    src: /logo-with-shadow.svg
+    src: /logo-with-shadow.png
     alt: Vite
   actions:
     - theme: brand
