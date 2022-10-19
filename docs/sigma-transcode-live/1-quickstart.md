@@ -12,7 +12,7 @@
 
     **Kết quả**: Trang **đăng nhập** hiện ra, người dùng nhập thông tin đăng nhập vào hệ thống
 
-![login](/Users/vietanha34/Documents/workspace/til/md-manual-template/manual/images/login.png){ width=400px }
+![login](../images/um-login/main.png){ width=400px }
 
 
 Sau đó, hệ thống sẽ xử lý thao tác đăng nhập.
