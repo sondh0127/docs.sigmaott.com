@@ -84,9 +84,6 @@ export default defineConfig({
           { text: 'Sigma Transcode Live', link: '/sigma-transcode-live/' }
         ]
       },
-      // { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
-      { text: 'Config', link: '/config/', activeMatch: '/config/' },
-      { text: 'Plugins', link: '/plugins/', activeMatch: '/plugins/' },
       {
         text: 'Apis',
         items: [

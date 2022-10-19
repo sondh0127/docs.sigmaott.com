@@ -15,7 +15,7 @@ Mỗi giá trị token sẽ bao gồm các thông cơ bản:
 - Tên.
 - Quyền.
 
-  Để hiểu rõ hơn về quyền, truy cập phần [Phân quyền](./permission.md).
+  Để hiểu rõ hơn về quyền, truy cập phần **Phân quyền**.
 
 ---
 
@@ -68,7 +68,7 @@ Mỗi nhóm sẽ bao gồm hai thông cơ bản:
 - Tên (cột **Name** trong bảng trên).
 - Danh sách quyền (cột **Permissions** trong bảng trên).
 
-  Để hiểu rõ hơn về quyền, truy cập phần [Phân quyền](./permission.md).
+  Để hiểu rõ hơn về quyền, truy cập phần **Phân quyền**.
 
 ---
 
@@ -117,7 +117,7 @@ Di chuyển chuột vào nhóm để hiển thị chi tiết quyền.
 
   ![Permissions of group](../images/um-member/permission.png)
 
-  Để hiểu rõ hơn về quyền, truy cập phần [Phân quyền](./permission.md).
+  Để hiểu rõ hơn về quyền, truy cập phần **Phân quyền**.
 
 ---
 

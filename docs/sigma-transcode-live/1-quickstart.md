@@ -17,7 +17,7 @@
 
 Sau đó, hệ thống sẽ xử lý thao tác đăng nhập.
 
-- Nếu thành công, điều hướng người dùng về trang [Quản trị](./dashboard.md) hoặc trang người dùng đã truy cập trước khi bị điều hướng sang trang Đăng nhập.
+- Nếu thành công, điều hướng người dùng về trang **Quản trị** hoặc trang người dùng đã truy cập trước khi bị điều hướng sang trang Đăng nhập.
 
 - Nếu thất bại, hệ thống sẽ hiển thị thông báo lỗi và giữ nguyên giao diện hiện tại của người dùng.
 
@@ -58,7 +58,7 @@ Người dùng xác nhận việc thay đổi mật khẩu mới bằng cách nh
 
 Sau đó, hệ thống sẽ hiện thị thông báo đổi mật khẩu thành công hay thất bại.
 
-- Nếu thành công, hệ thống hiển thị thông báo thành công và điều hướng người dùng về trang [Đăng nhập](./login.md).
+- Nếu thành công, hệ thống hiển thị thông báo thành công và điều hướng người dùng về trang **Đăng nhập**.
 
   ![Success Message](../images/um-change-pwd/success-msg.jpg)
 

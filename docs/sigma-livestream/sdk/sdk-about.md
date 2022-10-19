@@ -10,8 +10,3 @@ Sigma Livestream Android sdk gồm 2 bộ sdk riêng biệt gồm:
 - Android Playback SDK: tập hợp các plugin cho player để phát nội dung live stream
 
 ---
-
-import Jump from '@site/src/components/base/AppJump';
-
-<Jump to="/docs/livestream/sdk/android/record">Android SDK</Jump>
-<Jump to="/docs/livestream/sdk/ios/doc-avplayershls-plugin">IOs SDK</Jump>

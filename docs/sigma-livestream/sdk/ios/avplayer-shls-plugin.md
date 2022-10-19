@@ -18,7 +18,7 @@ Kéo thả AVPlayerSHlsPlugin.framework vào project. Sau đó add framework nh�
 
 #### 2.2. Khởi tạo AVPlayer
 
-```objectivec
+```
 NSURL *url = [NSURL URLWithString:url];
 AVURLAsset *asset = [AVURLAsset URLAssetWithURL:url options:nil];
 self.playerItem = [AVPlayerItem playerItemWithAsset:asset];

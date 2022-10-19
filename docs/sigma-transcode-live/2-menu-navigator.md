@@ -87,9 +87,9 @@ Cho phép người dùng thao tác với tài khoản sau khi đăng nhập vào
 
 Bao gồm 4 tùy chọn `Home`, `Change password` và `Log out`.
 
-- `Home` điều hướng người dùng về [Trang chủ](./dashboard.md).
-- `Change password` thay đổi mật khẩu tài khoản người dùng. Tùy chọn này sẽ điều hướng người dùng sang trang [Đổi mật khẩu](./change-pwd.md).
-- `Logout` đăng xuất tài khoản hiện tại và điều hướng người dùng sang trang [Đăng nhập](./login.md).
+- `Home` điều hướng người dùng về **Trang chủ**.
+- `Change password` thay đổi mật khẩu tài khoản người dùng. Tùy chọn này sẽ điều hướng người dùng sang trang **Đổi mật khẩu**.
+- `Logout` đăng xuất tài khoản hiện tại và điều hướng người dùng sang trang **Đăng nhập**.
 
 
 ## Danh sách quản lý máy chủ
