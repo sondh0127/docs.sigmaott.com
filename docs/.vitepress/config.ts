@@ -9,7 +9,7 @@ export default defineConfig({
   title: 'Sigma Streaming Platform',
   description: 'Modern Streaming Platform',
 
-  base: '/docs/',
+  base: '/',
 
   head: [
     [
@@ -38,10 +38,10 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
 
-    editLink: {
-      pattern: 'https://github.com/vitejs/vite/edit/main/docs/:path',
-      text: 'Suggest changes to this page'
-    },
+    // editLink: {
+    //   pattern: 'https://github.com/vitejs/vite/edit/main/docs/:path',
+    //   text: 'Suggest changes to this page'
+    // },
 
     socialLinks: [
       { icon: 'twitter', link: 'https://twitter.com/vite_js' },
@@ -78,7 +78,11 @@ export default defineConfig({
     nav: [
       {
         text: 'Guide',
-        items: [{ text: 'Sigma Interactive', link: '/sigma-interactive/' }]
+        items: [
+          { text: 'Sigma Interactive', link: '/sigma-interactive/' },
+          { text: 'Sigma Livestream', link: '/sigma-livestream/' },
+          { text: 'Sigma Transcode Live', link: '/sigma-transcode-live/' }
+        ]
       },
       // { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
       { text: 'Config', link: '/config/', activeMatch: '/config/' },
@@ -98,6 +102,7 @@ export default defineConfig({
           { text: 'Sigma Dynamic Ads Insert Apis', link: '/apis/sigma-dai' }
         ]
       },
+      { text: 'Teams', link: '/teams/', activeMatch: '/teams/' },
       {
         text: 'Links',
         items: [
@@ -141,6 +146,60 @@ export default defineConfig({
             {
               text: 'Get Started',
               link: '/sigma-interactive/1.get-started/2.get-started'
+            }
+          ]
+        }
+      ],
+      '/sigma-livestream/': [
+        {
+          text: 'About',
+          items: [
+            {
+              text: 'Introduction',
+              link: '/sigma-livestream/1.about/1.introduction'
+            },
+            {
+              text: 'Infrastructure',
+              link: '/sigma-livestream/1.about/2.Infrastructure.md'
+            },
+            {
+              text: 'Low Latency Streaming',
+              link: '/sigma-livestream/1.about/3.low-latency-streaming.md'
+            }
+          ]
+        }
+      ],
+      '/sigma-transcode-live/': [
+        {
+          text: 'About',
+          items: [
+            {
+              text: 'Quick Start',
+              link: '/sigma-transcode-live/1-quickstart.md'
+            },
+            {
+              text: 'Menu Navigator',
+              link: '/sigma-transcode-live/2-menu-navigator.md'
+            },
+            {
+              text: 'Service Config',
+              link: '/sigma-transcode-live/3-service-config.md'
+            },
+            {
+              text: 'Manage Service',
+              link: '/sigma-transcode-live/4-manage-service.md'
+            },
+            {
+              text: 'Monitor',
+              link: '/sigma-transcode-live/5-monitor.md'
+            },
+            {
+              text: 'Management',
+              link: '/sigma-transcode-live/6-management.md'
+            },
+            {
+              text: 'Manifest Filtering',
+              link: '/sigma-transcode-live/7-manifest-filtering.md'
             }
           ]
         }
