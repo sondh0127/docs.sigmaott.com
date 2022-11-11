@@ -11,9 +11,9 @@ Với mỗi một kênh trên hệ thống sẽ có 1 hay nhiều các **job** t
 
 * Số lượng Job của kênh sẽ tương ứng với số lượng đầu ra tương ứng của kênh, bên cạnh đó nếu đầu ra có bật tính năng catchup, timeshift, thì hệ thống sẽ tạo thêm 1 **job catchup** tương ứng với đầu ra này (việc phân tách job này giúp hệ thống hoạt động ổn định khi có 1 trong các job có thể gặp sự cố) 
 * Khi cấu hình tạo kênh mới, hệ thống sẽ tự động tạo sẵn các job cần thiết đối với kênh
-``` warning
+::: warning
 Việc thay đổi cấu hình kênh có thể làm thay đổi số lượng job của kênh và có thể dẫn tới việc mất các job cần thiết
-```
+:::
 
 ### Trạng thái của kênh
 

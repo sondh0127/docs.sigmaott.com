@@ -26,7 +26,7 @@ Hệ thống Sigma Streaming Platform hỗ trợ các chuẩn đầu vào sau:
    1. **Tên** của input 
    2. **Redundancy** chọn **single**
    3. **Type** chọn **UDP**
-   4. **Primary Source** điền thông tin về luồng đã chuẩn bị ở bước 1 [Cài đặt luồng đầu vào](3-getting-started-step1.md)
+   4. **Primary Source** điền thông tin về luồng đã chuẩn bị ở bước 1 [Cài đặt luồng đầu vào](03-getting-started-step1.md)
    5. **Primary Interface Network** vui lòng chọn 1 card mạng nhận luồng udp multicast này bỏ qua 
 
 
