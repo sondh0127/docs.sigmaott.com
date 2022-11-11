@@ -39,7 +39,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
     editLink: {
-      pattern: 'https://pr.new/SigmaOTT/docs.sigmaott.com/edit/develop/docs/:path',
+      pattern: 'https://pr.new/sigmaott/docs.sigmaott.com/edit/develop/docs/:path',
       text: 'Edit this page',
     },
 
