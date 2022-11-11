@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import SidebarBuilder from '@stuyk/vitepress-sidebar-builder'
 
 const ogDescription = 'Next Generation Frontend Tooling'
 const ogImage = 'https://main.vitejs.dev/og-image.png'
@@ -43,11 +44,7 @@ export default defineConfig({
     //   text: 'Suggest changes to this page'
     // },
 
-    socialLinks: [
-      { icon: 'twitter', link: 'https://twitter.com/vite_js' },
-      { icon: 'discord', link: 'https://chat.vitejs.dev' },
-      { icon: 'github', link: 'https://github.com/vitejs/vite' }
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/SigmaOTT' }],
 
     algolia: {
       apiKey: 'b573aa848fd57fb47d693b531297403c',
@@ -79,9 +76,9 @@ export default defineConfig({
       {
         text: 'Guide',
         items: [
-          { text: 'Sigma Interactive', link: '/sigma-interactive/' },
+          { text: 'Sigma Transcode Live', link: '/sigma-transcode-live/' },
           { text: 'Sigma Livestream', link: '/sigma-livestream/' },
-          { text: 'Sigma Transcode Live', link: '/sigma-transcode-live/' }
+          { text: 'Sigma Interactive', link: '/sigma-interactive/' }
         ]
       },
       {
@@ -104,45 +101,81 @@ export default defineConfig({
         text: 'Links',
         items: [
           {
-            text: 'Twitter',
-            link: 'https://twitter.com/vite_js'
-          },
-          {
-            text: 'Discord Chat',
-            link: 'https://chat.vitejs.dev'
-          },
-          {
-            text: 'Awesome Vite',
-            link: 'https://github.com/vitejs/awesome-vite'
-          },
-          {
-            text: 'DEV Community',
-            link: 'https://dev.to/t/vite'
-          },
-          {
-            text: 'Rollup Plugins Compat',
-            link: 'https://vite-rollup-plugins.patak.dev/'
-          },
-          {
-            text: 'Changelog',
-            link: 'https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md'
+            text: 'Github',
+            link: 'https://github.com/SigmaOTT'
           }
         ]
       }
     ],
 
     sidebar: {
-      '/sigma-interactive/': [
+      '/sigma-transcode-live/': [
         {
-          text: 'Get Started',
+          text: 'Giới thiệu',
+          collapsible: true,
+          // Retrieves all markdown files,
+          // but does not retrieve any other files in this folder.
+          // Ignores any files with '_partial' in their name.
+          items: SidebarBuilder.get.filesAndOrder(
+            'docs/sigma-transcode-live/01-introduction',
+            ['_partial']
+          )
+        },
+        {
+          text: 'Bắt đầu',
+          collapsible: true,
+          // Retrieves all markdown files,
+          // but does not retrieve any other files in this folder.
+          // Ignores any files with '_partial' in their name.
+          items: SidebarBuilder.get.filesAndOrder(
+            'docs/sigma-transcode-live/02-get-started',
+            ['_partial']
+          )
+        },
+
+        {
+          text: 'Resource: Kênh',
+          collapsible: true,
+          // Retrieves all markdown files,
+          // but does not retrieve any other files in this folder.
+          // Ignores any files with '_partial' in their name.
+          items: SidebarBuilder.get.filesAndOrder(
+            'docs/sigma-transcode-live/03-transcode-package-channel',
+            ['_partial']
+          )
+        },
+
+        {
+          text: 'Resource: Kênh Sự kiện',
+          collapsible: true,
+          // Retrieves all markdown files,
+          // but does not retrieve any other files in this folder.
+          // Ignores any files with '_partial' in their name.
+          items: SidebarBuilder.get.filesAndOrder(
+            'docs/sigma-transcode-live/04-event-channel',
+            ['_partial']
+          )
+        },
+
+        {
+          text: 'Quản lý và giám sát',
+          collapsible: true,
+          // Retrieves all markdown files,
+          // but does not retrieve any other files in this folder.
+          // Ignores any files with '_partial' in their name.
+          items: SidebarBuilder.get.filesAndOrder(
+            'docs/sigma-transcode-live/05-monitor-manage',
+            ['_partial']
+          )
+        },
+
+        {
+          text: 'Manifest Filtering',
+          collapsible: true,
           items: [
             {
-              text: 'Introduction',
-              link: '/sigma-interactive/1.get-started/1.introduction'
-            },
-            {
-              text: 'Get Started',
-              link: '/sigma-interactive/1.get-started/2.get-started'
+              text: 'Manifest Filtering',
+              link: '/sigma-transcode-live/06-manifest-filtering.md'
             }
           ]
         }
@@ -166,160 +199,17 @@ export default defineConfig({
           ]
         }
       ],
-      '/sigma-transcode-live/': [
+      '/sigma-interactive/': [
         {
-          text: 'About',
+          text: 'Get Started',
           items: [
             {
-              text: 'Quick Start',
-              link: '/sigma-transcode-live/1-quickstart.md'
+              text: 'Introduction',
+              link: '/sigma-interactive/1.get-started/1.introduction'
             },
             {
-              text: 'Menu Navigator',
-              link: '/sigma-transcode-live/2-menu-navigator.md'
-            },
-            {
-              text: 'Service Config',
-              link: '/sigma-transcode-live/3-service-config.md'
-            },
-            {
-              text: 'Manage Service',
-              link: '/sigma-transcode-live/4-manage-service.md'
-            },
-            {
-              text: 'Monitor',
-              link: '/sigma-transcode-live/5-monitor.md'
-            },
-            {
-              text: 'Management',
-              link: '/sigma-transcode-live/6-management.md'
-            },
-            {
-              text: 'Manifest Filtering',
-              link: '/sigma-transcode-live/7-manifest-filtering.md'
-            }
-          ]
-        }
-      ],
-      '/guide/': [
-        {
-          text: 'Guide',
-          items: [
-            {
-              text: 'Why Vite',
-              link: '/guide/why'
-            },
-            {
-              text: 'Getting Started',
-              link: '/guide/'
-            },
-            {
-              text: 'Features',
-              link: '/guide/features'
-            },
-            {
-              text: 'Using Plugins',
-              link: '/guide/using-plugins'
-            },
-            {
-              text: 'Dependency Pre-Bundling',
-              link: '/guide/dep-pre-bundling'
-            },
-            {
-              text: 'Static Asset Handling',
-              link: '/guide/assets'
-            },
-            {
-              text: 'Building for Production',
-              link: '/guide/build'
-            },
-            {
-              text: 'Deploying a Static Site',
-              link: '/guide/static-deploy'
-            },
-            {
-              text: 'Env Variables and Modes',
-              link: '/guide/env-and-mode'
-            },
-            {
-              text: 'Server-Side Rendering (SSR)',
-              link: '/guide/ssr'
-            },
-            {
-              text: 'Backend Integration',
-              link: '/guide/backend-integration'
-            },
-            {
-              text: 'Comparisons',
-              link: '/guide/comparisons'
-            },
-            {
-              text: 'Migration from v2',
-              link: '/guide/migration'
-            },
-            {
-              text: 'Testing',
-              link: '/guide/testing'
-            }
-          ]
-        },
-        {
-          text: 'APIs',
-          items: [
-            {
-              text: 'Plugin API',
-              link: '/guide/api-plugin'
-            },
-            {
-              text: 'HMR API',
-              link: '/guide/api-hmr'
-            },
-            {
-              text: 'JavaScript API',
-              link: '/guide/api-javascript'
-            },
-            {
-              text: 'Config Reference',
-              link: '/config/'
-            }
-          ]
-        }
-      ],
-      '/config/': [
-        {
-          text: 'Config',
-          items: [
-            {
-              text: 'Configuring Vite',
-              link: '/config/'
-            },
-            {
-              text: 'Shared Options',
-              link: '/config/shared-options'
-            },
-            {
-              text: 'Server Options',
-              link: '/config/server-options'
-            },
-            {
-              text: 'Build Options',
-              link: '/config/build-options'
-            },
-            {
-              text: 'Preview Options',
-              link: '/config/preview-options'
-            },
-            {
-              text: 'Dep Optimization Options',
-              link: '/config/dep-optimization-options'
-            },
-            {
-              text: 'SSR Options',
-              link: '/config/ssr-options'
-            },
-            {
-              text: 'Worker Options',
-              link: '/config/worker-options'
+              text: 'Get Started',
+              link: '/sigma-interactive/1.get-started/2.get-started'
             }
           ]
         }

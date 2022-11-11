@@ -10,14 +10,21 @@ import {
 
 const members = [
   {
-    avatar: 'https://www.github.com/yyx990803.png',
-    name: 'Evan You',
-    title: 'Creator',
+    avatar: 'https://avatars.githubusercontent.com/u/62163604',
+    name: 'Son Hong Do',
+    title: 'Frontend Developer',
     links: [
-      { icon: 'github', link: 'https://github.com/yyx990803' },
-      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
+      { icon: 'github', link: 'https://github.com/sondh0127' }
     ]
   },
+  {
+    avatar: 'https://github.com/vietkute02.png',
+    name: 'Viet Anh Luu',
+    title: 'Tech Lead',
+    links: [
+      { icon: 'github', link: 'https://github.com/vietkute02' }
+    ]
+  }
 ]
 </script>
 
@@ -27,7 +34,7 @@ const members = [
       Our Team
     </template>
     <template #lead>
-      The development of VitePress is guided by an international
+      The development of Sigma Streaming Platform is guided by an international
       team, some of whom have chosen to be featured below.
     </template>
   </VPTeamPageTitle>
