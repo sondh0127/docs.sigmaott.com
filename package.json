@@ -9,7 +9,12 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs --port 3000"
+    "docs:serve": "vitepress serve docs --port 3000",
+    "build": "vitepress build",
+    "dev": "vitepress dev",
+    "format": "prettier --write '**/*.{js,ts,vue,css,scss}'",
+    "serve": "vitepress serve",
+    "start": "vitepress dev"
   },
   "dependencies": {
     "@stuyk/vitepress-sidebar-builder": "^1.0.2"
