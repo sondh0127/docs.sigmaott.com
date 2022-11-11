@@ -38,11 +38,10 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/logo.svg',
-
-    // editLink: {
-    //   pattern: 'https://github.com/vitejs/vite/edit/main/docs/:path',
-    //   text: 'Suggest changes to this page'
-    // },
+    editLink: {
+      pattern: 'https://pr.new/SigmaOTT/docs.sigmaott.com/edit/develop/docs/:path',
+      text: 'Edit this page',
+    },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/SigmaOTT' }],
 
