@@ -7,14 +7,10 @@
     "vue": "^3.2.44"
   },
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs --port 3000",
-    "build": "vitepress build",
-    "dev": "vitepress dev",
-    "format": "prettier --write '**/*.{js,ts,vue,css,scss}'",
-    "serve": "vitepress serve",
-    "start": "vitepress dev"
+    "build": "vitepress build docs",
+    "dev": "vitepress dev docs",
+    "serve": "vitepress serve docs --port 3000",
+    "start": "vitepress dev docs"
   },
   "dependencies": {
     "@sigmaott/vitepress-sidebar-builder": "^1.0.3"
