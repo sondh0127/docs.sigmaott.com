@@ -2,43 +2,43 @@
 layout: home
 
 title: Sigma Streaming Platform
-titleTemplate: The New Modern Streaming Platform
+titleTemplate: Hệ thống Video Streaming Platform thế hệ mới
 
 hero:
   name: Sigma Streaming Platform
-  text: The New Modern Streaming Platform
-  tagline: Our wide array of video solutions are deployed globally across thousands of enterprises, media companies, service providers, and educational institutions, leveraging video to teach, learn, communicate, collaborate, and entertain.
+  text: Hệ thống Video Streaming Platform thế hệ mới
+  tagline: Hàng loạt giải pháp video của chúng tôi được triển khai trên toàn cầu tại hàng nghìn doanh nghiệp, công ty truyền thông, nhà cung cấp dịch vụ và tổ chức giáo dục, tận dụng video để dạy, học, giao tiếp, cộng tác và giải trí.
   image:
     src: /logo-with-shadow.png
     alt: Vite
   actions:
     - theme: brand
-      text: Get Started
+      text: Bắt đầu
       link: /guide/
     - theme: alt
-      text: Why Sigma?
+      text: Tại sao là Sigma?
       link: /guide/why
     - theme: alt
-      text: View on GitHub
+      text: Xem trên Github
       link: https://github.com/SigmaOTT
 
 features:
   - icon: 💡
     title: Sigma Transcode Live
-    details: On demand file serving over native ESM, no bundling required!
+    details: Chuyển mã nội dung video trực tiếp từ nhiều luồng khác nhau
   - icon: ⚡️
     title: Sigma Interactive
-    details: Hot Module Replacement (HMR) that stays fast regardless of app size.
+    details: Truyền hình tương tác với nhiều nội dung kịch bản thú vị
   - icon: 🛠️
     title: Sigma Live Streaming
-    details: Out-of-the-box support for TypeScript, JSX, CSS and more.
+    details: Livestream trực tiếp với nhiều tính năng tùy chỉnh
   - icon: 📦
     title: Sigma Dynamic Ads Insert
-    details: Pre-configured Rollup build with multi-page and library mode support.
+    details: Chèn quảng cáo động trên máy chủ
   - icon: 🔩
     title: Sigma Linear Right Management
-    details: Rollup-superset plugin interface shared between dev and build.
+    details: Quản lý quyền truy cập trực tiếp cho nội dung tuyến tính
   - icon: 🔑
     title: Sigma Packager
-    details: Flexible programmatic APIs with full TypeScript typing.
+    details: Đóng gói nội dung video trực tiếp từ nhiều luồng khác nhau
 ---

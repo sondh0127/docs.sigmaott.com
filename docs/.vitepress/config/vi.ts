@@ -19,11 +19,11 @@ export const viConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
 
     nav: [
       {
-        text: 'Guides',
+        text: 'Bắt đầu',
         link: '/vi/sigma-streaming-platform/01-get-started/1-introduction.md'
       },
       {
-        text: 'Components',
+        text: 'Các thành phần',
         items: [
           { text: 'Sigma Transcode Live', link: '/vi/sigma-transcode-live/' },
           { text: 'Sigma Livestream', link: '/vi/sigma-livestream/' },
@@ -51,7 +51,7 @@ export const viConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
           { text: 'Sigma Dynamic Ads Insert Apis', link: '/apis/sigma-dai' }
         ]
       },
-      { text: 'Teams', link: '/vi/teams/', activeMatch: '/vi/teams/' },
+      { text: 'Đội ngũ', link: '/vi/teams/', activeMatch: '/vi/teams/' },
       {
         text: 'Links',
         items: [
