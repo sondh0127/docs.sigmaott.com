@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@sigmaott/vitepress-sidebar-builder': ^1.0.3
   vite: 3.2.3
-  vitepress: 1.0.0-alpha.28
+  vitepress: npm:@brc-dd/vitepress@1.0.0-dev.b4e1483
   vue: ^3.2.44
 
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 
 devDependencies:
   vite: 3.2.3
-  vitepress: 1.0.0-alpha.28
+  vitepress: /@brc-dd/vitepress/1.0.0-dev.b4e1483
   vue: 3.2.44
 
 packages:
@@ -151,6 +151,33 @@ packages:
       '@babel/helper-string-parser': 7.19.4
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
+    dev: true
+
+  /@brc-dd/vitepress/1.0.0-dev.b4e1483:
+    resolution: {integrity: sha512-R0RR6Tbpe1xDop1SJpYlR9V9AeDz6nu2nxU8GIT0fgawUDRysMBc4Lr/Fpep4Jhc5t4e3B06nnq450AZv3gD2g==}
+    hasBin: true
+    dependencies:
+      '@docsearch/css': 3.3.0
+      '@docsearch/js': 3.3.0
+      '@vitejs/plugin-vue': 3.2.0_vite@3.2.3+vue@3.2.44
+      '@vue/devtools-api': 6.4.5
+      '@vueuse/core': 9.5.0_vue@3.2.44
+      body-scroll-lock: 4.0.0-beta.0
+      shiki: 0.11.1
+      vite: 3.2.3
+      vue: 3.2.44
+    transitivePeerDependencies:
+      - '@algolia/client-search'
+      - '@types/node'
+      - '@types/react'
+      - '@vue/composition-api'
+      - less
+      - react
+      - react-dom
+      - sass
+      - stylus
+      - sugarss
+      - terser
     dev: true
 
   /@docsearch/css/3.3.0:
@@ -839,33 +866,6 @@ packages:
       rollup: 2.79.1
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
-
-  /vitepress/1.0.0-alpha.28:
-    resolution: {integrity: sha512-pvbLssDMgLUN1terajmPlFBxHSDGO4DqwexKbjFyr7LeELerVuwGrG6F2J1hxmwOlbpLd1kHXEDqGm9JX/kTDQ==}
-    hasBin: true
-    dependencies:
-      '@docsearch/css': 3.3.0
-      '@docsearch/js': 3.3.0
-      '@vitejs/plugin-vue': 3.2.0_vite@3.2.3+vue@3.2.44
-      '@vue/devtools-api': 6.4.5
-      '@vueuse/core': 9.5.0_vue@3.2.44
-      body-scroll-lock: 4.0.0-beta.0
-      shiki: 0.11.1
-      vite: 3.2.3
-      vue: 3.2.44
-    transitivePeerDependencies:
-      - '@algolia/client-search'
-      - '@types/node'
-      - '@types/react'
-      - '@vue/composition-api'
-      - less
-      - react
-      - react-dom
-      - sass
-      - stylus
-      - sugarss
-      - terser
     dev: true
 
   /vscode-oniguruma/1.6.2:
