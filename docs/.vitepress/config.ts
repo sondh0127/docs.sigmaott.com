@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import SidebarBuilder from '@stuyk/vitepress-sidebar-builder'
+import SidebarBuilder from '@sigmaott/vitepress-sidebar-builder'
 
 const ogDescription = 'Next Generation Frontend Tooling'
 const ogImage = 'https://main.vitejs.dev/og-image.png'
@@ -46,13 +46,14 @@ export default defineConfig({
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/SigmaOTT' }],
 
-    algolia: {
-      apiKey: 'b573aa848fd57fb47d693b531297403c',
-      indexName: 'vitejs',
-      searchParameters: {
-        facetFilters: ['tags:en']
-      }
-    },
+    // algolia: {
+    //   appId: 'BX3OD935AJ',
+    //   apiKey: 'a9242e5892567a7ebcff8f1ca782bced',
+    //   indexName: 'sigmaott',
+    //   searchParameters: {
+    //     facetFilters: ['tags:en']
+    //   }
+    // },
 
     // carbonAds: {
     //   code: 'CEBIEK3N',
@@ -74,15 +75,18 @@ export default defineConfig({
 
     nav: [
       {
-        text: 'Guide',
+        text: 'Components',
         items: [
           { text: 'Sigma Transcode Live', link: '/sigma-transcode-live/' },
           { text: 'Sigma Livestream', link: '/sigma-livestream/' },
-          { text: 'Sigma Interactive', link: '/sigma-interactive/' }
+          { text: 'Sigma Interactive', link: '/sigma-interactive/' },
+          { text: 'Sigma Linear Right Management', link: '/sigma-lrm/' }
+          { text: 'Sigma Machine', link: '/sigma-machine/' }
+          { text: 'Sigma DAI', link: '/sigma-dai/' }
         ]
       },
       {
-        text: 'Apis',
+        text: 'APIs',
         items: [
           { text: 'Sigma Interactive Apis', link: '/apis/sigma-interactive' },
           {
@@ -110,75 +114,25 @@ export default defineConfig({
 
     sidebar: {
       '/sigma-transcode-live/': [
-        {
-          text: 'Giới thiệu',
+        ...SidebarBuilder.get.foldersAndOrder('./docs/sigma-transcode-live', {
+          collapsed: false,
           collapsible: true,
-          // Retrieves all markdown files,
-          // but does not retrieve any other files in this folder.
-          // Ignores any files with '_partial' in their name.
-          items: SidebarBuilder.get.filesAndOrder(
-            'docs/sigma-transcode-live/01-introduction',
-            ['_partial']
-          )
-        },
-        {
-          text: 'Bắt đầu',
+          partialFileNamesToIgnore: ['_partial']
+        })
+      ],
+      '/sigma-lrm/': [
+        ...SidebarBuilder.get.foldersAndOrder('./docs/sigma-lrm', {
+          collapsed: false,
           collapsible: true,
-          // Retrieves all markdown files,
-          // but does not retrieve any other files in this folder.
-          // Ignores any files with '_partial' in their name.
-          items: SidebarBuilder.get.filesAndOrder(
-            'docs/sigma-transcode-live/02-get-started',
-            ['_partial']
-          )
-        },
-
-        {
-          text: 'Resource: Kênh',
+          partialFileNamesToIgnore: ['_partial']
+        })
+      ],
+      '/sigma-dai/': [
+        ...SidebarBuilder.get.foldersAndOrder('./docs/sigma-dai', {
+          collapsed: false,
           collapsible: true,
-          // Retrieves all markdown files,
-          // but does not retrieve any other files in this folder.
-          // Ignores any files with '_partial' in their name.
-          items: SidebarBuilder.get.filesAndOrder(
-            'docs/sigma-transcode-live/03-transcode-package-channel',
-            ['_partial']
-          )
-        },
-
-        {
-          text: 'Resource: Kênh Sự kiện',
-          collapsible: true,
-          // Retrieves all markdown files,
-          // but does not retrieve any other files in this folder.
-          // Ignores any files with '_partial' in their name.
-          items: SidebarBuilder.get.filesAndOrder(
-            'docs/sigma-transcode-live/04-event-channel',
-            ['_partial']
-          )
-        },
-
-        {
-          text: 'Quản lý và giám sát',
-          collapsible: true,
-          // Retrieves all markdown files,
-          // but does not retrieve any other files in this folder.
-          // Ignores any files with '_partial' in their name.
-          items: SidebarBuilder.get.filesAndOrder(
-            'docs/sigma-transcode-live/05-monitor-manage',
-            ['_partial']
-          )
-        },
-
-        {
-          text: 'Manifest Filtering',
-          collapsible: true,
-          items: [
-            {
-              text: 'Manifest Filtering',
-              link: '/sigma-transcode-live/06-manifest-filtering.md'
-            }
-          ]
-        }
+          partialFileNamesToIgnore: ['_partial']
+        })
       ],
       '/sigma-livestream/': [
         {

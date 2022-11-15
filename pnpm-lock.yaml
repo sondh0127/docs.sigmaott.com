@@ -1,13 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@stuyk/vitepress-sidebar-builder': ^1.0.2
+  '@sigmaott/vitepress-sidebar-builder': ^1.0.3
   vite: 3.2.3
   vitepress: 1.0.0-alpha.28
   vue: ^3.2.44
 
 dependencies:
-  '@stuyk/vitepress-sidebar-builder': 1.0.2
+  '@sigmaott/vitepress-sidebar-builder': 1.0.3
 
 devDependencies:
   vite: 3.2.3
@@ -203,8 +203,8 @@ packages:
     dev: true
     optional: true
 
-  /@stuyk/vitepress-sidebar-builder/1.0.2:
-    resolution: {integrity: sha512-9gQaeNPE9Qiz8ozZ9xp/DQIZOKnpxW3GSbg57BSVJBMFfP/5poc155TFckmmwwo3gjeb87fi+eG26SN72lQbxw==}
+  /@sigmaott/vitepress-sidebar-builder/1.0.3:
+    resolution: {integrity: sha512-Qyt8s2RWmhUbaIgJ8lszHszXOFVFuy0UcdR+1M7fgolyFxzh2WZ5wGzAfYJ6WnD7JT206v0gYQfQlCZ4HHmmpQ==}
     dependencies:
       glob: 8.0.3
       gray-matter: 4.0.3

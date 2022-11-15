@@ -1,6 +1,6 @@
 ---
-title: 'Kênh sự kiện'
-order: -99
+title: 'Resource: Kênh sự kiện'
+order: 4
 ---
 
 # {{ $frontmatter.title }}

@@ -1,6 +1,6 @@
 ---
 title: 'Resource: Kênh'
-order: -99
+order: 3
 ---
 
 # {{ $frontmatter.title }}

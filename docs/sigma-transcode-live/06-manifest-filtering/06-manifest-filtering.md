@@ -1,5 +1,9 @@
-# Manifest filtering
+---
+title: 'Manifest Filtering'
+order: 1
+---
 
+# Manifest filtering
 
 An Apple HLS filter query might look like this:
 

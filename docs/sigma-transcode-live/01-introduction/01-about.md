@@ -1,6 +1,6 @@
 ---
 title: 'Giới thiệu'
-order: 0
+order: 1
 ---
 
 # {{ $frontmatter.title }}

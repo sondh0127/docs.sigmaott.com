@@ -17,6 +17,6 @@
     "start": "vitepress dev"
   },
   "dependencies": {
-    "@stuyk/vitepress-sidebar-builder": "^1.0.2"
+    "@sigmaott/vitepress-sidebar-builder": "^1.0.3"
   }
 }
