@@ -1,0 +1,3 @@
+files:
+  - source: /docs/vi/**/*.md
+    translation: /docs/%two_letters_code%/%original_file_name%
