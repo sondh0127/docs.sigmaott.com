@@ -39,8 +39,9 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
     editLink: {
-      pattern: 'https://pr.new/sigmaott/docs.sigmaott.com/edit/develop/docs/:path',
-      text: 'Edit this page',
+      pattern:
+        'https://pr.new/sigmaott/docs.sigmaott.com/edit/develop/docs/:path',
+      text: 'Edit this page'
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/SigmaOTT' }],
@@ -74,13 +75,17 @@ export default defineConfig({
 
     nav: [
       {
+        text: 'Guides',
+        link: '/sigma-streaming-platform/01-get-started/1-introduction.md'
+      },
+      {
         text: 'Components',
         items: [
           { text: 'Sigma Transcode Live', link: '/sigma-transcode-live/' },
           { text: 'Sigma Livestream', link: '/sigma-livestream/' },
           { text: 'Sigma Interactive', link: '/sigma-interactive/' },
-          { text: 'Sigma Linear Right Management', link: '/sigma-lrm/' }
-          { text: 'Sigma Machine', link: '/sigma-machine/' }
+          { text: 'Sigma Linear Right Management', link: '/sigma-lrm/' },
+          { text: 'Sigma Machine', link: '/sigma-machine/' },
           { text: 'Sigma DAI', link: '/sigma-dai/' }
         ]
       },
@@ -112,8 +117,25 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/sigma-streaming-platform/': [
+        ...SidebarBuilder.get.foldersAndOrder(
+          './docs/sigma-streaming-platform',
+          {
+            collapsed: false,
+            collapsible: true,
+            partialFileNamesToIgnore: ['_partial']
+          }
+        )
+      ],
       '/sigma-transcode-live/': [
         ...SidebarBuilder.get.foldersAndOrder('./docs/sigma-transcode-live', {
+          collapsed: false,
+          collapsible: true,
+          partialFileNamesToIgnore: ['_partial']
+        })
+      ],
+      '/sigma-machine/': [
+        ...SidebarBuilder.get.foldersAndOrder('./docs/sigma-machine', {
           collapsed: false,
           collapsible: true,
           partialFileNamesToIgnore: ['_partial']
