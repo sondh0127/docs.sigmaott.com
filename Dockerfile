@@ -12,7 +12,7 @@ ADD . ./
 
 RUN pnpm install -r --offline --ignore-scripts
 
-RUN pnpm run docs:build
+RUN pnpm run build
 
 ########### RUN ##########
 
