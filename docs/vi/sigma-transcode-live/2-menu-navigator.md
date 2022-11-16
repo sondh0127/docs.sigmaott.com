@@ -10,13 +10,13 @@ Màn hình Dashboard hiển thị các thông tin cơ bản, tổng quan về c�
 
 Hiển thị các thông tin tổng quan về dịch vụ **Transcode & Package** 
 
-![Trạng thái Kênh transcode / packager](../images/um-dashboard/transcode.png)
+![Trạng thái Kênh transcode / packager](./images/um-dashboard/transcode.png)
 
 2. Machine state
 
 Hiển thị các thông tin liên quan đến máy chủ **Transcode & Package**
 
-![Trạng thái máy chủ](../images/um-dashboard/machine.png)
+![Trạng thái máy chủ](./images/um-dashboard/machine.png)
 
 1. Origin state
 
@@ -30,25 +30,25 @@ Hiển thị thông tin liên quan đến KPI hệ thống Origin bao gồm
 * Note: Các request đến Origin được chia làm 2 loại **segment** (Request yêu cầu tập tin media- ts, m4v), **manifest** (request yêu cầu tập tin manifest - m3u8, mpd)
 
 
-![Trạng thái hệ thống origin](../images/um-dashboard/origin.png)
+![Trạng thái hệ thống origin](./images/um-dashboard/origin.png)
 
 ## **Menu panel**
 
 Danh sách menu tính năng hệ thống. Danh sách này sẽ phụ thuộc vào gói tính năng hệ thống mà bạn được cung cấp
 
-![Danh sách menu](../images/um-panel-menu.png){ width=150px }
+![Danh sách menu](./images/um-panel-menu.png){ width=150px }
 
 
 ## Breadcrumb
 
 Breadcrumb hiển thị các liên kết người dùng đã truy cập trước đó. Nội dung breadcrumb hiển thị phía trên của màn hình trình duyệt.
 
-![Breadcrumb](../images/um-breadcrumb/sample.png)
+![Breadcrumb](./images/um-breadcrumb/sample.png)
 
 
 ## Header Menu
 
-![Header Menu](../images/um-header-menu/main.png)
+![Header Menu](./images/um-header-menu/main.png)
 
 Bao gồm 3 tùy chọn:
 
@@ -58,7 +58,7 @@ Bao gồm 3 tùy chọn:
 
 ### Bật/tắt chế độ xem toàn bộ màn hình
 
-![Fullscreen Menu](../images/um-header-menu/fullscreen.jpg)
+![Fullscreen Menu](./images/um-header-menu/fullscreen.jpg)
 
 Cho phép người dùng bật/tắt chế độ xem toàn bộ màn hình.
 
@@ -68,7 +68,7 @@ Khi được kích hoạt, nội dung ứng dụng sẽ hiển thị tràn ra to
 
 ### Tùy chỉnh kích thước font chữ
 
-![Fontsize Menu](../images/um-header-menu/font-size.jpg)
+![Fontsize Menu](./images/um-header-menu/font-size.jpg)
 
 Thiết lập kích thước font chữ cho toàn bộ ứng dụng.
 
@@ -78,10 +78,10 @@ Sau khi chọn 1 trong 4 tùy chọn trên, kích thước font chữ ứng dụ
 
 ### Theo tác với tài khoản người dùng
 
-![Profile User](../images/um-header-menu/profile.jpg)&ensp;
-![Home Profile User](../images/um-header-menu/home-profile.jpg)&ensp;
-![Change Password Profile User](../images/um-header-menu/change-pwd-profile.jpg)&ensp;
-![Logout Profile User](../images/um-header-menu/logout-profile.jpg)
+![Profile User](./images/um-header-menu/profile.jpg)&ensp;
+![Home Profile User](./images/um-header-menu/home-profile.jpg)&ensp;
+![Change Password Profile User](./images/um-header-menu/change-pwd-profile.jpg)&ensp;
+![Logout Profile User](./images/um-header-menu/logout-profile.jpg)
 
 Cho phép người dùng thao tác với tài khoản sau khi đăng nhập vào hệ thống.
 
@@ -104,12 +104,12 @@ Hệ thống **Sigma Transcoder** quản lý 2 dạng máy chủ:
 * **Transcode**: Thực hiện các tác vụ chuyển mã nội dung đa phương tiện
 * **Package**: Thực hiện các tác vụ đóng gói 
 
-![Phân loại máy chủ](../images/um-machine-tab.png)
+![Phân loại máy chủ](./images/um-machine-tab.png)
 
 Trên màn hình giao diện hệ thống bạn có thể liệt kê và theo dõi các máy chủ theo các mục khác nhau
 
 
-![Danh sách máy chủ](../images/um-machine-list.png)
+![Danh sách máy chủ](./images/um-machine-list.png)
 
 Trong đó: 
 

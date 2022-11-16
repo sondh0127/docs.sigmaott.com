@@ -10,13 +10,13 @@ Dashboard displays displays basic information, overview of the services that are
 
 Display information overview **Transcode & Package**
 
-![Transcode Channel Status/packager](../images/um-dashboard/transcode.png)
+![Transcode Channel Status/packager](./images/um-dashboard/transcode.png)
 
 2. Machine state
 
 Display information related to server **Transcode & Package**
 
-![Server State](../images/um-dashboard/machine.png)
+![Server State](./images/um-dashboard/machine.png)
 
 1. Origin state
 
@@ -30,25 +30,25 @@ Display information related to the Origin KPI including:
 * Note: The request to Origin is divided into two types **segment** (Request request media file-ts, m4v), **manifest** (request requires manifest file-m3u8, mpd)
 
 
-![Origin System Status](../images/um-dashboard/origin.png)
+![Origin System Status](./images/um-dashboard/origin.png)
 
 ## **Panel menu**
 
 The list of system features menus. This list will depend on the system features package that you are offered.
 
-![Menu list](../images/um-panel-menu.png){width =150px}
+![Menu list](./images/um-panel-menu.png){width =150px}
 
 
 ## Breadcrumb
 
 Breadcrumb displays previously accessed user links. The breadcrumb content displays the top of the browser screen.
 
-![Breadcrumb](../images/um-breadcrumb/sample.png)
+![Breadcrumb](./images/um-breadcrumb/sample.png)
 
 
 ## Header Menu
 
-![Header Menu](../images/um-header-menu/main.png)
+![Header Menu](./images/um-header-menu/main.png)
 
 Includes 3 options:
 
@@ -58,7 +58,7 @@ Includes 3 options:
 
 ### Enable/disable the full screen view
 
-![Fullscreen Menu](../images/um-header-menu/fullscreen.jpg)
+![Fullscreen Menu](./images/um-header-menu/fullscreen.jpg)
 
 Allow users to enable/disable the entire screen view.
 
@@ -68,7 +68,7 @@ When activated, the application content will spread out the entire screen.
 
 ### Customize font size
 
-![Fontsize Menu](../images/um-header-menu/font-size.jpg)
+![Fontsize Menu](./images/um-header-menu/font-size.jpg)
 
 Set the font size for the entire application.
 
@@ -78,7 +78,7 @@ After selecting one of the top four options, the font size is changed.
 
 ### In a User Account
 
-![Profile User](../images/um-header-menu/profile.jpg)&ensp; ![Home Profile User](../images/um-header-menu/home-profile.jpg)&ensp; ![Change Password Profile User](../images/um-header-menu/change-pwd-profile.jpg)&ensp; ![Logout Profile User](../images/um-header-menu/logout-profile.jpg)
+![Profile User](./images/um-header-menu/profile.jpg)&ensp; ![Home Profile User](./images/um-header-menu/home-profile.jpg)&ensp; ![Change Password Profile User](./images/um-header-menu/change-pwd-profile.jpg)&ensp; ![Logout Profile User](./images/um-header-menu/logout-profile.jpg)
 
 Allows users to manipulate with the account after login to the system.
 
@@ -101,12 +101,12 @@ System **Sigma Transcoder** managing two types of servers:
 * **Transcode**: Perform multimedia content code transfer tasks
 * **Package**: Impleming of packaged tasks
 
-![Server classification](../images/um-machine-tab.png)
+![Server classification](./images/um-machine-tab.png)
 
 On a system interface screen you can list and monitor servers in different items.
 
 
-![Server List](../images/um-machine-list.png)
+![Server List](./images/um-machine-list.png)
 
 In it:
 

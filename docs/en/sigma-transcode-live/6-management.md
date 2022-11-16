@@ -8,7 +8,7 @@ User-managed administration system, api access token to the system
 Manage the system to use on the system.
 
 ### List of basic authentications
-![List of token](../images/um-basic-auth/list.png)
+![List of token](./images/um-basic-auth/list.png)
 
 Each token value will include the basic parameters:
 
@@ -27,31 +27,31 @@ A token will be assigned one or more rights.
 
 ### Create token
 
-1. Click on button ![Add button](../images/um-member/btn-add.png).
+1. Click on button ![Add button](./images/um-member/btn-add.png).
 2. Enter the token information in form.
 
-    ![Add Form](../images/um-basic-auth/form-add.png)
+    ![Add Form](./images/um-basic-auth/form-add.png)
 
     When performing an assignment to the token, it is possible to select the permissions available in the list of groups. Then, the token will inherit all the rights of the selected group. It is possible to edit (add sur/delete) the inherited rights to the appropriate.
 
-    Click the ![Add perm button](../images/um-basic-auth/btn-add-perm.png) button to display more lists of rights.
+    Click the ![Add perm button](./images/um-basic-auth/btn-add-perm.png) button to display more lists of rights.
 
-    ![Add Form](../images/um-basic-auth/form-add-2.png)
+    ![Add Form](./images/um-basic-auth/form-add-2.png)
 
-3. Save the token by clicking the ![Submit button](../images/um-member/btn-submit.png) button.
+3. Save the token by clicking the ![Submit button](./images/um-member/btn-submit.png) button.
 
   Token new execution system:
-  - If successful token information is created: ![Info token](../images/um-basic-auth/info.png)
+  - If successful token information is created: ![Info token](./images/um-basic-auth/info.png)
 
-    Click on ![Icon copy password](../images/um-member/icon-copy.png) symbols of Token ID and Token Secret. The Token Secret value will be deleted soon after.
+    Click on ![Icon copy password](./images/um-member/icon-copy.png) symbols of Token ID and Token Secret. The Token Secret value will be deleted soon after.
 
   - If the failure will show the error message.
 
 ### Edit token
 
-Click on the ![Edit button](../images/um-action-btns/edit.png) button to change the name, the permissions of the token.
+Click on the ![Edit button](./images/um-action-btns/edit.png) button to change the name, the permissions of the token.
 
-![Edit token](../images/um-basic-auth/form-edit.png)
+![Edit token](./images/um-basic-auth/form-edit.png)
 
 
 ## Group
@@ -59,7 +59,7 @@ Click on the ![Edit button](../images/um-action-btns/edit.png) button to change 
 Manage User Groups
 
 ### Group List
-![List of groups](../images/um-group/list.png)
+![List of groups](./images/um-group/list.png)
 
 
 Each group will consist of two basic parameters:
@@ -79,16 +79,16 @@ A group consists of one or several rights. The accounts in the group are inherit
 
 ### Create Group
 
-1. Click on button ![Add button](../images/um-member/btn-add.png).
+1. Click on button ![Add button](./images/um-member/btn-add.png).
 2. Enter the account information in form.
 
-    ![Add Form](../images/um-group/form-add.png)
+    ![Add Form](./images/um-group/form-add.png)
 
     The information to import includes:
     - Name.
     - Password.
     - The powers.
-3. Save the group by clicking the ![Submit button](../images/um-member/btn-submit.png) button.
+3. Save the group by clicking the ![Submit button](./images/um-member/btn-submit.png) button.
 
   Group new execution system:
   - If successful display success is successful.
@@ -96,7 +96,7 @@ A group consists of one or several rights. The accounts in the group are inherit
 
 ### Edit account rights
 
-Click on the ![Edit button](../images/um-action-btns/edit.png) button to edit the group ' s name information and rights.
+Click on the ![Edit button](./images/um-action-btns/edit.png) button to edit the group ' s name information and rights.
 
 
 ## Member
@@ -104,7 +104,7 @@ Click on the ![Edit button](../images/um-action-btns/edit.png) button to edit th
 Manage the list of user accounts on the system.
 
 ### Account List
-![List of member](../images/um-member/list.png)
+![List of member](./images/um-member/list.png)
 
 
 Each account will include a few basic parameters:
@@ -114,7 +114,7 @@ Each account will include a few basic parameters:
 
 Move the mouse into the group to show the copyright details.
 
-  ![Permissions of group](../images/um-member/permission.png)
+  ![Permissions of group](./images/um-member/permission.png)
 
   To better understand the rights, access section **Decline**.
 
@@ -128,31 +128,31 @@ An account will be a member of one and only one group.
 
 ### Create Account
 
-1. Click on button ![Add button](../images/um-member/btn-add.png).
+1. Click on button ![Add button](./images/um-member/btn-add.png).
 2. Enter the account information in form.
 
-    ![Add Form](../images/um-member/form-add.png)
+    ![Add Form](./images/um-member/form-add.png)
 
     The information to import includes:
     - Login name.
     - Password.
     - The group will empower.
 
-      The selected group will display the blue tick ![Selected group](../images/um-member/group-selected.png)
-3. Save the account by clicking the ![Submit button](../images/um-member/btn-submit.png) button.
+      The selected group will display the blue tick ![Selected group](./images/um-member/group-selected.png)
+3. Save the account by clicking the ![Submit button](./images/um-member/btn-submit.png) button.
 
   The new implementation execution system:
-  - If the successful display of account information is generated including the login name and password: .![Account info](../images/um-member/account-info.png)
+  - If the successful display of account information is generated including the login name and password: .![Account info](./images/um-member/account-info.png)
 
-    Click on ![Icon show password](../images/um-member/icon-eye.png), ![Icon copy password](../images/um-member/icon-copy.png)  to display and copy passwords.
+    Click on ![Icon show password](./images/um-member/icon-eye.png), ![Icon copy password](./images/um-member/icon-copy.png)  to display and copy passwords.
 
   - If the failure will show the error message.
 
 ### Edit account rights
 
-Click on the ![Edit button](../images/um-action-btns/edit.png) button to change the rights of the account by assigning an account to another group.
+Click on the ![Edit button](./images/um-action-btns/edit.png) button to change the rights of the account by assigning an account to another group.
 
-![Edit account](../images/um-member/form-edit.png)
+![Edit account](./images/um-member/form-edit.png)
 
 
 ## Permission
@@ -176,4 +176,4 @@ On the system will be divided into various rights, each of which will include tw
 
 For example, the interface displays a right on the system
 
-  ![Permission](../images/um-permission/general.png)
+  ![Permission](./images/um-permission/general.png)
