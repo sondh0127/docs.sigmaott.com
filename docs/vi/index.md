@@ -12,15 +12,13 @@ hero:
     src: /logo-with-shadow.png
     alt: Vite
   actions:
-    - theme: brand
-      text: Bắt đầu
-      link: /guide/
+
     - theme: alt
       text: Tại sao là Sigma?
-      link: /guide/why
+      link: /vi/sigma-streaming-platform/01-get-started/1-introduction
     - theme: alt
       text: Xem trên Github
-      link: https://github.com/SigmaOTT
+      link: https://github.com/sigmaot
 
 features:
   - icon: 💡

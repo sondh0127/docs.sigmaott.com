@@ -1,7 +1,9 @@
 ---
-layout: Home
+layout: home
+
 title: Sigma Streaming Platform
 titleTemplate: New Generation Streaming Platform Video System
+
 hero:
   name: Sigma Streaming Platform
   text: New Generation Streaming Platform Video System
@@ -10,41 +12,29 @@ hero:
     src: /logo-with-shadow.png
     alt: Vite
   actions:
-    - 
-      theme: brand
-      text: Start.
-      link: /guide/
-    - 
-      theme: alt
+    - theme: alt
       text: Why Sigma?
-      link: /guide/why
-    - 
-      theme: alt
+      link: /en/sigma-streaming-platform/01-get-started/1-introduction
+    - theme: alt
       text: View on Github
       link: https://github.com/sigmaott
 features:
-  - 
-    icon: '💡'
+  - icon: '💡'
     title: Sigma Transcode Live
     details: Convert video content directly from multiple threads
-  - 
-    icon: '⚡️'
+  - icon: '⚡️'
     title: Sigma Interactive
     details: Television interacts with many interesting scenario content.
-  - 
-    icon: '🛠️'
+  - icon: '🛠️'
     title: Sigma Live Streaming
     details: Livestream directly with many custom features.
-  - 
-    icon: '📦'
+  - icon: '📦'
     title: Sigma Dynamic Ads Insert
     details: Insert an active advertisement on the server
-  - 
-    icon: '🔩'
+  - icon: '🔩'
     title: Sigma Linear Right Management
     details: Managing direct access to linear content
-  - 
-    icon: '🔑'
+  - icon: '🔑'
     title: Sigma Packager
     details: Close the live video content package from multiple threads
 ---

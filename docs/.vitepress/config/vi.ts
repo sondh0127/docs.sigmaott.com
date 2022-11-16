@@ -38,15 +38,15 @@ export const viConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
         items: [
           {
             text: 'Sigma Interactive Apis',
-            link: '/apis/sigma-interactive'
+            link: '/vi/apis/sigma-interactive'
           },
           {
             text: 'Sigma Linear Right Management Apis',
-            link: '/apis/sigma-lrm'
+            link: '/vi/apis/sigma-lrm'
           },
           {
             text: 'Sigma Transcode Live Apis',
-            link: '/apis/sigma-transcode-live'
+            link: '/vi/apis/sigma-transcode-live'
           },
           { text: 'Sigma Dynamic Ads Insert Apis', link: '/apis/sigma-dai' }
         ]
