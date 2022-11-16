@@ -66,7 +66,7 @@ export const enConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
     sidebar: {
       '/en/sigma-streaming-platform/': [
         ...SidebarBuilder.get.foldersAndOrder(
-          './en/docs/sigma-streaming-platform',
+          './docs/en/sigma-streaming-platform',
           {
             collapsed: false,
             collapsible: true,
@@ -76,7 +76,7 @@ export const enConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
       ],
       '/en/sigma-transcode-live/': [
         ...SidebarBuilder.get.foldersAndOrder(
-          './en/docs/sigma-transcode-live',
+          './docs/en/sigma-transcode-live',
           {
             collapsed: false,
             collapsible: true,
@@ -85,21 +85,21 @@ export const enConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
         )
       ],
       '/en/sigma-machine/': [
-        ...SidebarBuilder.get.foldersAndOrder('./en/docs/sigma-machine', {
+        ...SidebarBuilder.get.foldersAndOrder('./docs/en/sigma-machine', {
           collapsed: false,
           collapsible: true,
           partialFileNamesToIgnore: ['_partial']
         })
       ],
       '/en/sigma-lrm/': [
-        ...SidebarBuilder.get.foldersAndOrder('./en/docs/sigma-lrm', {
+        ...SidebarBuilder.get.foldersAndOrder('./docs/en/sigma-lrm', {
           collapsed: false,
           collapsible: true,
           partialFileNamesToIgnore: ['_partial']
         })
       ],
       '/en/sigma-dai/': [
-        ...SidebarBuilder.get.foldersAndOrder('./en/docs/sigma-dai', {
+        ...SidebarBuilder.get.foldersAndOrder('./docs/en/sigma-dai', {
           collapsed: false,
           collapsible: true,
           partialFileNamesToIgnore: ['_partial']

@@ -2,12 +2,12 @@
 layout: home
 
 title: Sigma Streaming Platform
-titleTemplate: Hệ thống Video Streaming Platform thế hệ mới
+titleTemplate: Video Streaming Platform thế hệ mới
 
 hero:
   name: Sigma Streaming Platform
   text: Hệ thống Video Streaming Platform thế hệ mới
-  tagline: Hàng loạt giải pháp video của chúng tôi được triển khai trên toàn cầu tại hàng nghìn doanh nghiệp, công ty truyền thông, nhà cung cấp dịch vụ và tổ chức giáo dục, tận dụng video để dạy, học, giao tiếp, cộng tác và giải trí.
+  tagline: Hàng loạt giải pháp video của chúng tôi được triển khai trên toàn cầu tại các doanh nghiệp, công ty truyền thông, nhà cung cấp dịch vụ, tận dụng video để dạy, học, giao tiếp, cộng tác và giải trí.
   image:
     src: /logo-with-shadow.png
     alt: Vite
