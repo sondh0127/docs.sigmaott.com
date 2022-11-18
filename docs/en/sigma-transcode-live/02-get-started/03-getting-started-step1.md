@@ -16,4 +16,4 @@ In this tutorial, for example, the input signal for the signal form is **MPEG-TS
 
 With the protocol taking the signal from the multicast UDP, it is necessary to be ready for the pull of the pull from the Sigma Packager already prepared for this signal via a pre-defined network card.
 
-Record IP addresses of UDP flow and network cards that contain that signal to be set up at the next step.
+Record IP addresses of UDP flow and network cards that contain that signal to be set up at the next step. 2
